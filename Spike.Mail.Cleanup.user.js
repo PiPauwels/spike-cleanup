@@ -6,7 +6,7 @@
 // @author       PiPauwels
 // @match        https://spikenow.com/web/*
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js
-// @require      https://gist.githubusercontent.com/raw/2625891/waitForKeyElements.js
+// @require      https://update.greasyfork.org/scripts/383527/701631/Wait_for_key_elements.js
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=spikenow.com
 // @grant        GM.getValue
 // ==/UserScript==
