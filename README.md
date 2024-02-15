@@ -12,6 +12,8 @@ This breaks the natural feeling of a chat conversation and will start to annoy y
 
 Currently, I've only added Dutch, but you can easily add regular expressions to the script to add other unsupported languaged. As a bonus, I've added some regular expressions to remove those annoying default e-mail signature that are often added by mobile clients ("Sent from my iPhone", etc.).
 
+Unfortunately, this will of course only work with the web version of Spike. For the apps, we can only hope they will soon implement this kind of filtering for other languages as well.
+
 ## Install the script
 
 This script makes use of a User Script Manager Tampermonkey/Greasemonkey so it's available for Chrome, Microsoft Edge, Safari, Opera en Firefox. 
