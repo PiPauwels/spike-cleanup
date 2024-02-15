@@ -12,21 +12,21 @@ This breaks the natural feeling of a chat conversation and will start to annoy y
 
 Currently, I've only added Dutch, but you can easily add regular expressions to the script to add other unsupported languaged. As a bonus, I've added some regular expressions to remove those annoying default e-mail signature that are often added by mobile clients ("Sent from my iPhone", etc.).
 
-## Script installeren
+## Install the script
 
-Dit script maakt gebruik van User Script Manager Tampermonkey/Greasemonkey en is dus bruikbaar in Chrome, Microsoft Edge, Safari, Opera en Firefox. 
+This script makes use of a User Script Manager Tampermonkey/Greasemonkey so it's available for Chrome, Microsoft Edge, Safari, Opera en Firefox. 
 
-### Vereisten
+### Prerequisites
 
-Naast één van de hierboven vermelde browsers moet je eerst en vooral de plugin Tampermonkey installeren in je browser:
+In addition to one of the browsers mentioned above, you must first install the Tampermonkey plugin in your browser:
 * [Google Chrome Tampermonkey extension](https://chrome.google.com/webstore/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo)
 * [Microsoft Edge Tampermonkey app](https://www.microsoft.com/store/apps/9NBLGGH5162S)
 * [Apple Safari extension](https://safari.tampermonkey.net/tampermonkey.safariextz)
 * [Mozilla Firefox addon](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)
 * [Opera extension](https://addons.opera.com/en/extensions/details/tampermonkey-beta/)
 
-### Installatie
+### Installation
 
-Ga naar [Spike quoted mail fix](https://greasyfork.org/nl/scripts/487366-spike-quoted-mail-fix) en klik op de groene knop "Install this script".
+Go to [Spike quoted mail fix](https://greasyfork.org/nl/scripts/487366-spike-quoted-mail-fix) and click on the green buttong "Install this script".
 
-Je krijgt vervolgens het script te zien in de extensie van uw browser. Klik daar nogmaals op de knop "Install" om het script te installeren.
+You will then see the script in the extension of your browser. Click on the "Install" button again to install the script.
