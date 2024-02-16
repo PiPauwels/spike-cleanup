@@ -11,7 +11,7 @@
 // @grant        GM.getValue
 // ==/UserScript==
 
-const QUOTED_TEXT_REGEX_DUT = /\n?\s?Op\s(maandag|dinsdag|woensdag|donderdag|vrijdag|zaterdag|zondag|ma|di|wo|do|vr|za|zo)\s\d+\s.*schreef.*(<|lt;)+.*@.*(>|gt;)+.*/g;
+const QUOTED_TEXT_REGEX_DUT = /\n?\s?Op\s(maandag|dinsdag|woensdag|donderdag|vrijdag|zaterdag|zondag|ma|di|wo|do|vr|za|zo)?\s?\d+\s.*(schreef|heeft).*(<|lt;)+.*@.*(>|gt;)+.*(geschreven)?(.*|\n)*/g;
 const DEFAULT_SIG_1 = /Enviado (de mi|de|desde) ((<|&lt;)a.*(>|&gt;)+)?.*/g;
 const DEFAULT_SIG_2 = /Verstuurd vanaf mijn iPhone(.*|\n)*/g;
 const TRAILING_NEWLINES = /(<br>|<br\/>|\s)+$/g;
