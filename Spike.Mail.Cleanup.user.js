@@ -16,6 +16,7 @@
 const QUOTED_TEXT_REGEX_DUT = /\n?\s?Op\s(maandag|dinsdag|woensdag|donderdag|vrijdag|zaterdag|zondag|ma|di|wo|do|vr|za|zo)?\s?\d+\s.*(schreef|heeft).*(<|lt;)+.*@.*(>|gt;)+.*(geschreven)?(.*|\n)*/g;
 const DEFAULT_SIG_1 = /Enviado (de mi|de|desde) ((<|&lt;)a.*(>|&gt;)+)?.*(.*|\n)*/g;
 const DEFAULT_SIG_2 = /Verstuurd vanaf mijn iPhone(.*|\n)*/g;
+const ORIGINAL_MSG = /-------- Oorspronkelijk bericht --------(.*|\n)*/g;
 const TRAILING_NEWLINES = /(<br>|<br\/>|\s)+$/g;
 const TRAILING_EMPTY_DIVS = /(<div dir="auto"><br><\/div>|\n)*(<div><br><\/div>|<div id="ms-outlook-mobile-signature" dir="auto"><\/div>)/g;
 
@@ -45,6 +46,7 @@ function stripQuotedText (jNode)
     jNode.html( jNode.html().replace(QUOTED_TEXT_REGEX_DUT, "")
                             .replaceAll(DEFAULT_SIG_1,"")
                             .replaceAll(DEFAULT_SIG_2,"")
+                            .replaceAll(ORIGINAL_MSG,"")
                             .replaceAll(TRAILING_NEWLINES,"")
                             .replaceAll(TRAILING_EMPTY_DIVS,""));
 }
