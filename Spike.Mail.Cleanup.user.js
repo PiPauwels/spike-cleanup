@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Spike quoted mail fix
 // @namespace    http://tampermonkey.net/
-// @version      2024-02-11
+// @version      2026-07-27
 // @description  Removes quoted text from Spike messages in unsupported languages and default junk signatures (style "Sent from my iThingy").
 // @author       PiPauwels
 // @match        https://spikenow.com/web/*
