@@ -50,3 +50,24 @@ function stripQuotedText (jNode)
                             .replaceAll(TRAILING_NEWLINES,"")
                             .replaceAll(TRAILING_EMPTY_DIVS,""));
 }
+
+(function() {
+'use strict';
+
+// Functie die zoekt en verwijdert
+function removePaywall() {
+const paywall = document.querySelector('#oViewport > div > div:nth-child(2)');
+if (paywall) {
+paywall.remove();
+console.log("Paywall succesvol verwijderd!");
+observer.disconnect(); // Stop met zoeken als het gelukt is
+}
+}
+
+// Start direct zodra de pagina 'idle' is
+removePaywall();
+
+// Blijf de pagina observeren voor het geval de paywall later laadt
+const observer = new MutationObserver(removePaywall);
+observer.observe(document.body, { childList: true, subtree: true });
+})();
